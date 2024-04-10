@@ -162,6 +162,7 @@ public class Simulation3D : MonoBehaviour
         compute.SetMatrix("worldToLocal", transform.worldToLocalMatrix);
     }
 
+
     void SetInitialBufferData(Spawner3D.SpawnData spawnData)
     {
         float3[] allPoints = new float3[spawnData.points.Length];
@@ -205,6 +206,5 @@ public class Simulation3D : MonoBehaviour
         Gizmos.color = new Color(0, 1, 0, 0.5f);
         Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
         Gizmos.matrix = m;
-
     }
 }
